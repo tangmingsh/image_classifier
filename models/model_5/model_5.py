@@ -32,7 +32,7 @@
 
 model = Sequential()
 
-model.add(Conv2D(32, (3, 3), padding='same', input_shape=(150,150,3), activation='relu'))
+model.add(Conv2D(32, (3, 3), padding='same', input_shape=input_shape, activation='relu'))
 model.add(Conv2D(32, (3, 3), padding='same', activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
